@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget App</title>
+    <script
+      src="https://kit.fontawesome.com/a63259a33c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fa-regular fa-money-bill-1 logo-icon"></i>
+      </div>
+      <div class="balance">
+        <h1 id="balance-info" class="balance-info">
+          Dodaj swoje przychody i wydatki
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="incomes">
+        <h2 class="incomes-title">Przychody</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="Wpisz nazwę przychodu"
+            id="income-name"
+            class="name-input"
+          /><input
+            type="number"
+            placeholder="Wprowadź kwotę"
+            id="income-amount"
+            class="amount-input"
+          /><button id="income-btn" class="add-btn">Dodaj</button>
+        </form>
+        <ul id="incomes-list"></ul>
+        <p>Suma przychodów wynosi: <span id="incomes-sum">0</span> zł</p>
+      </section>
+
+      <section class="expenses">
+        <h2 class="expenses-title">Wydatki</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="Wpisz nazwę wydatku"
+            id="expense-name"
+            class="name-input"
+          /><input
+            type="number"
+            placeholder="Wprowadź kwotę"
+            id="expense-amount"
+            class="amount-input"
+          /><button id="expense-btn" class="add-btn">Dodaj</button>
+        </form>
+        <ul id="expenses-list"></ul>
+        <p>Suma wydatków wynosi: <span id="expenses-sum">0</span> zł</p>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
