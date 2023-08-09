@@ -1,6 +1,6 @@
 # Budget-Web-App
 
-This is a siple home budget app.
+This is a simple home budget app.
 
 ## Technologies Used
 

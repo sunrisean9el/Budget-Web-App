@@ -29,7 +29,7 @@ body {
   color: #ffffff;
 }
 
-main {
+.main-content {
   margin: 0 auto;
   width: 60%;
   display: flex;
@@ -68,7 +68,7 @@ form {
   justify-content: space-between;
 }
 
-.new-item > div {
+.btn-div {
   display: flex;
   gap: 8px;
 }
@@ -87,7 +87,7 @@ form {
 }
 
 @media (min-width: 768px) {
-  main {
+  .main-content {
     flex-direction: row;
   }
 
