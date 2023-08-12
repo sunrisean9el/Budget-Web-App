@@ -68,6 +68,10 @@ form {
   justify-content: space-between;
 }
 
+.edit-input {
+  width: 50%;
+}
+
 .btn-div {
   display: flex;
   gap: 8px;
